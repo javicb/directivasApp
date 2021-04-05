@@ -19,7 +19,7 @@ export class AgregarComponent implements OnInit {
   }
 
   tieneError(campo: string): boolean {
-    return this.miFormulario.get('nombre')?.invalid || false;
+    return this.miFormulario.get(campo)?.invalid || false;
   }
 
 }
